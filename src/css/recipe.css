@@ -28,3 +28,19 @@
     justify-content: space-around;
     flex-wrap:wrap;
 }
+
+.btn{
+background-color: black;
+color: white;
+font-size: 16px;
+padding: 12px 26px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.btn:hover {
+    background-color: #e6655c;
+    color: white;
+  }

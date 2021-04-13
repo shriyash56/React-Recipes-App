@@ -64,7 +64,9 @@ export default function SearchRecipe({ start, end, fetch, handleFetch }) {
           <img src={img} />
         </div>
       )}
-     {fetch &&  <div className="grid grid-cols-1 gap-2  md:place-items-center justify-items-stretch">
+     {fetch &&  
+     <div class="container my-12 mx-auto px-4 md:px-12">
+     <div class="flex flex-wrap -mx-1 lg:-mx-4">
         {recipes.map((ele, index) => {
           return (
             <Recipe
@@ -76,7 +78,9 @@ export default function SearchRecipe({ start, end, fetch, handleFetch }) {
             />
           );
         })}
-      </div>}
+      </div>
+      </div>
+      }
      <br/>
       <ToastContainer
         position="top-right"
