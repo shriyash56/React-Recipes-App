@@ -21,13 +21,13 @@ export default function SearchRecipe({ start, end, fetch, handleFetch }) {
       )
       .then((response) => {
         if (response.data.count == 0) {
-          toast.error("⚠️ Please Enter Valid Input");
+          toast.error("⚠️ Please Enter Valid Dish");
         }
         setrecipes(response.data.hits);
         handleFetch();
       })
       .catch((err) => {
-        toast.error("⚠️ Please Enter Valid Input");
+        toast.error("⚠️ Please Enter Valid Dish");
       });
   }, [query, start, end]);
 
