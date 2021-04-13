@@ -11,10 +11,11 @@ import {
 } from "@material-ui/core";
 
 export default function Recipe({ title, calories, image, ingredients }) {
-
   const [showModal, hideModal] = useModal(({ in: open, onExited }) => (
     <Dialog open={open} onExited={onExited} onClose={hideModal}>
-    <DialogTitle class="font-bold text-3xl flex justify-center">Take a good look at the recipe</DialogTitle>
+      <DialogTitle class="font-bold text-3xl flex justify-center">
+        Take a good look at the recipe
+      </DialogTitle>
       <DialogContent>
         <DialogContentText>
           <div className="text-gray-700 md:text-lg">
@@ -27,8 +28,10 @@ export default function Recipe({ title, calories, image, ingredients }) {
           </div>
         </DialogContentText>
       </DialogContent>
-           <DialogActions>
-        <button className="btn" onClick={hideModal}>Close</button>
+      <DialogActions>
+        <button className="btn" onClick={hideModal}>
+          Close
+        </button>
       </DialogActions>
     </Dialog>
   ));
@@ -57,7 +60,6 @@ export default function Recipe({ title, calories, image, ingredients }) {
           </footer>
         </article>
       </div>
-
     </>
   );
 }
